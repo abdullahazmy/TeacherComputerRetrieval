@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TeacherComputerRetrieval.CLI": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
