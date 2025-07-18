@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherComputerRetrieval.Core", "TeacherComputerRetrieval.Core\TeacherComputerRetrieval.Core.csproj", "{975FDC28-2B81-44E1-BF4E-11F164BF1DFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherComputerRetrieval.Infrastructure", "TeacherComputerRetrieval.Infrastructure\TeacherComputerRetrieval.Infrastructure.csproj", "{AB7D9B59-6E62-458E-AE21-6B91A34A2E7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherComputerRetrieval.Services", "TeacherComputerRetrieval.Services\TeacherComputerRetrieval.Services.csproj", "{87317729-C216-4B5C-BCC8-5917349BDF54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherComputerRetrieval.CLI", "TeacherComputerRetrieval.CLI\TeacherComputerRetrieval.CLI.csproj", "{40B0066F-2753-4393-BB04-32B514DDC9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherComputerRetrieval.Tests", "TeacherComputerRetrieval.Tests\TeacherComputerRetrieval.Tests.csproj", "{DE5AD84D-9C28-49BA-AEAC-1DE42ECB5467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{975FDC28-2B81-44E1-BF4E-11F164BF1DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975FDC28-2B81-44E1-BF4E-11F164BF1DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975FDC28-2B81-44E1-BF4E-11F164BF1DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975FDC28-2B81-44E1-BF4E-11F164BF1DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7D9B59-6E62-458E-AE21-6B91A34A2E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7D9B59-6E62-458E-AE21-6B91A34A2E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7D9B59-6E62-458E-AE21-6B91A34A2E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7D9B59-6E62-458E-AE21-6B91A34A2E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87317729-C216-4B5C-BCC8-5917349BDF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87317729-C216-4B5C-BCC8-5917349BDF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87317729-C216-4B5C-BCC8-5917349BDF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87317729-C216-4B5C-BCC8-5917349BDF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B0066F-2753-4393-BB04-32B514DDC9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B0066F-2753-4393-BB04-32B514DDC9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B0066F-2753-4393-BB04-32B514DDC9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B0066F-2753-4393-BB04-32B514DDC9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5AD84D-9C28-49BA-AEAC-1DE42ECB5467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5AD84D-9C28-49BA-AEAC-1DE42ECB5467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5AD84D-9C28-49BA-AEAC-1DE42ECB5467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5AD84D-9C28-49BA-AEAC-1DE42ECB5467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {509C3DA7-6EE9-494A-85B5-87D6DD4FB011}
+	EndGlobalSection
+EndGlobal
