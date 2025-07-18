@@ -19,6 +19,7 @@ This program helps the IT team by answering critical questions about the routes,
 
 The project is logically separated into different projects, each with a single responsibility. This is a standard practice known as Separation of Concerns, which makes the application easier to understand, test, and maintain.
 
+```text
 TeacherComputerRetrieval/
 ├── TeacherComputerRetrieval.Core/ # Core business models and interfaces
 │ ├── Models/Graph.cs
@@ -37,7 +38,7 @@ TeacherComputerRetrieval/
 └── TeacherComputerRetrieval.Tests/ # Unit tests
 ├── Models/GraphTests.cs
 └── Services/RouteServiceTests/
-
+```
 
 
 ---
