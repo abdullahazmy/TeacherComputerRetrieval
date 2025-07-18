@@ -42,7 +42,9 @@ TeacherComputerRetrieval/
 
 ---
 
-Sample of planning process
+**Sample of the planning process**
+
+
 <img width="1357" height="700" alt="image" src="https://github.com/user-attachments/assets/c1c6b228-587a-4257-a29c-e21c0fe13b26" />
 
 
