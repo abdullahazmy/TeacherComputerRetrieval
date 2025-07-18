@@ -160,3 +160,76 @@ private int ExactStopsRecursive(char current, char end, int stops, int exactStop
 
 ---
 
+**Method 4:** FindShortestRoute
+- **Goal:** To find the route with the minimum total distance between two nodes. This is a classic computer science problem.
+
+Code (RouteService.cs):
+
+```cs
+public string FindShortestRoute(char start, char end)
+{
+    if (start != end)
+    {
+        // Find a simple A->C path
+        int distance = FindShortestPath(start, end);
+        return distance == int.MaxValue ? "NO SUCH ROUTE" : distance.ToString();
+    }
+    
+    // Logic for shortest cycle (e.g., B->B)
+    // ...
+}
+
+private int FindShortestPath(char start, char end)
+{
+    // ... (Implementation of Dijkstra's algorithm) ...
+}
+```
+
+**Chosen Approach:** Dijkstra's Algorithm. This is the standard, industry-wide algorithm for finding the shortest path in a weighted graph where edge weights are non-negative (which our distances are). It works by intelligently exploring the graph, always prioritizing the path with the lowest current total distance. We also added special logic to handle the "cycle" case (like B to B) by finding the shortest path from B's neighbors back to B.
+
+**Why This Approach?** Dijkstra's is both correct and highly efficient for this specific problem type. It is significantly faster than naively checking every single possible path.
+
+**Alternative Approaches:**
+- Breadth-First Search (BFS): This algorithm is excellent for finding the shortest path in terms of the number of stops, but it cannot be used here because it doesn't account for the distance (weight) of each hop.
+- Bellman-Ford Algorithm: This algorithm is more powerful than Dijkstra's because it can handle graphs with negative edge weights. However, it is slower. Since our distances are always positive, using the more specialized and faster Dijkstra's algorithm is the better engineering choice.
+
+---
+
+
+Method 5: CountRoutesWithMaxDistance
+- Goal: To count the number of different routes from a start to an end node where the total distance is less than a given limit.
+
+Code (RouteService.cs):
+
+```cs
+public int CountRoutesWithMaxDistance(char start, char end, int maxDistance)
+{
+    return MaxDistanceRecursive(start, end, 0, maxDistance);
+}
+
+private int MaxDistanceRecursive(char current, char end, int currentDistance, int maxDistance)
+{
+    int count = 0;
+    // ... (explore neighbors) ...
+    int newDistance = currentDistance + neighbor.Value;
+    if (newDistance < maxDistance)
+    {
+        if (neighbor.Key == end) count++;
+        count += MaxDistanceRecursive(neighbor.Key, end, newDistance, maxDistance);
+    }
+    // ...
+    return count;
+}
+```
+
+Chosen Approach: A modified Depth-First Search (DFS) via recursion. This is very similar to how we counted trips by stops. The key difference is that the state we track includes the currentDistance of the path taken so far. We continue exploring a path only as long as its newDistance does not exceed the maxDistance limit.
+
+Why This Approach? Just like before, DFS is the natural choice for exploring all possible paths. Modifying the "pruning" condition from "number of stops" to "total distance" is a straightforward change that makes the algorithm fit this new requirement perfectly.
+
+
+Alternative Approaches: Any valid solution must fundamentally perform a DFS-like exploration of the graph, so there are no significantly different high-level algorithmic approaches.
+
+
+---
+
+Will update it to inlcude a documentation for unit testing In Sh'a Allah
