@@ -57,6 +57,9 @@ TeacherComputerRetrieval/
 git clone https://github.com/abdullahazmy/TeacherComputerRetrieval
 ```
 
+> ℹ️ After cloning, make sure to set `TeacherComputerRetrieval.CLI` as the Startup Project to run the app without Docker.
+
+
 Or you can use any other IDE or text editor like VScode for sure.
 
 
