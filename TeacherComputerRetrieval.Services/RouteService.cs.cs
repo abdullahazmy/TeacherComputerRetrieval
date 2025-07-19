@@ -12,7 +12,6 @@ namespace TeacherComputerRetrieval.Services
             _graph = graph;
         }
 
-        // This method remains the same
         public string GetDistanceOfRoute(string route)
         {
             var nodes = route.Split('-');
@@ -37,7 +36,6 @@ namespace TeacherComputerRetrieval.Services
             return totalDistance.ToString();
         }
 
-        // This method remains the same
         public int CountTripsWithMaxStops(char start, char end, int maxStops)
         {
             return MaxStopsRecursive(start, end, 0, maxStops);
@@ -63,7 +61,6 @@ namespace TeacherComputerRetrieval.Services
             return count;
         }
 
-        // This method remains the same
         public int CountTripsWithExactStops(char start, char end, int exactStops)
         {
             return ExactStopsRecursive(start, end, 0, exactStops);
@@ -89,7 +86,6 @@ namespace TeacherComputerRetrieval.Services
             return count;
         }
 
-        // This method remains the same
         public int CountRoutesWithMaxDistance(char start, char end, int maxDistance)
         {
             return MaxDistanceRecursive(start, end, 0, maxDistance);
@@ -116,9 +112,6 @@ namespace TeacherComputerRetrieval.Services
             return count;
         }
 
-        // === METHOD TO BE REPLACED ===
-        // This public method now correctly handles the cycle (start == end) case
-        // by delegating to the private Dijkstra implementation.
         public string FindShortestRoute(char start, char end)
         {
             if (start != end)
